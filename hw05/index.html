@@ -153,7 +153,9 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次 hw05 的實作是利用 YOLO 模型做訓練，我學習到了不同版本模型的運用與參數的調整方式。
+      也學會如何依據資料特性設定合適的學習率、批次大小與訓練輪數，並體會到標註格式對訓練品質的影響。
+      經過反覆測試與調整，我不僅提升了模型的偵測準確率，也更深入理解了物件偵測背後的原理與實務應用。
     </div>
   </div>
 
@@ -169,12 +171,12 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
           <td>Simple baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
           <td>Medium baseline - 描述</td>
         </tr>
@@ -184,7 +186,7 @@
           <td>Strong baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -194,11 +196,32 @@
   </div>
 
   <!-- ------------------------------------------------>
+
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <!-- <iframe width="100%" height="560" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+      <table>
+        <tr>
+          <td> Simple Baseline mAP50 分數圖片
+          <img src="Simple.png" width="100%" height="auto">
+        </tr>
+        <tr>
+          <td> Medium Baseline mAP50 分數圖片，使用Baseline模型接續訓練20個 Epochs 得到更高分
+          <img src="Medium.png" width="100%" height="auto">
+        </tr>
+        <tr>
+          <td> Strong Baseline <br>
+          Colab連結: 
+          <a href="https://colab.research.google.com/drive/1bo_LAH8mEjYh1wawpiVW8AHl2bzxCZWE?usp=sharing">
+          https://colab.research.google.com/drive/1bo_LAH8mEjYh1wawpiVW8AHl2bzxCZWE?usp=sharing
+          </a> <br>
+          使用YOLOv12m
+          <img src="v12m.png" width="100%" height="auto">
+          使用YOLOv9t
+          <img src="v9t.png" width="100%" height="auto">
+        </tr>
+      </table>
     </div>
   </div>
 
